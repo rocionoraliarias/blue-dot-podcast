@@ -1,0 +1,31 @@
+$color-primary: #000000;
+$color-secundary: #00F3BB;
+$color-third: #060A24;
+$background-color: #fefefefe;
+$background-color-secundary: #0000EC;
+$background-gradient: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+$background-gradient-hover: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+$font-primary: 'IBM Plex Mono',
+monospace;
+$font-titulo: 'IBM Plex Sans',
+sans-serif;
+$breakpoint-movil: 768px;
+
+
+%button {
+    background-color: $color-secundary;
+    font-family: $font-primary;
+    padding: 13px 50px;
+    font-size: 16px;
+    color: $color-third;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    
+    &:hover {
+        transition: all 1s ease;
+        background-image: $background-gradient-hover;
+    }
+}
